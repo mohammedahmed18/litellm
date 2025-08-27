@@ -120,6 +120,7 @@ class InMemoryCache(BaseCache):
                 # https://www.geeksforgeeks.org/diagnosing-and-fixing-memory-leaks-in-python/
                 # One of the most common causes of memory leaks in Python is the retention of objects that are no longer being used.
                 # This can occur when an object is referenced by another object, but the reference is never removed.
+        return
 
     def allow_ttl_override(self, key: str) -> bool:
         """
