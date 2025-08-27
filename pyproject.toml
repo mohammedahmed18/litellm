@@ -163,3 +163,11 @@ version_files = [
 
 [tool.mypy]
 plugins = "pydantic.mypy"
+
+[tool.codeflash]
+# All paths are relative to this pyproject.toml's directory.
+module-root = "litellm"
+tests-root = "tests"
+test-framework = "pytest"
+ignore-paths = []
+formatter-cmds = ["disabled"]
